@@ -17,6 +17,7 @@
 		DA6CF4242976DDDF002627B7 /* movieListWithFireBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CF4232976DDDF002627B7 /* movieListWithFireBaseTests.swift */; };
 		DA6CF42E2976DDDF002627B7 /* movieListWithFireBaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CF42D2976DDDF002627B7 /* movieListWithFireBaseUITests.swift */; };
 		DA6CF4302976DDDF002627B7 /* movieListWithFireBaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CF42F2976DDDF002627B7 /* movieListWithFireBaseUITestsLaunchTests.swift */; };
+		DA6CF43D2976E2AB002627B7 /* movieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CF43C2976E2AB002627B7 /* movieListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DA6CF4292976DDDF002627B7 /* movieListWithFireBaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = movieListWithFireBaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6CF42D2976DDDF002627B7 /* movieListWithFireBaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieListWithFireBaseUITests.swift; sourceTree = "<group>"; };
 		DA6CF42F2976DDDF002627B7 /* movieListWithFireBaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieListWithFireBaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DA6CF43C2976E2AB002627B7 /* movieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				DA6CF40B2976DDDE002627B7 /* SceneDelegate.swift */,
 				DA6CF40D2976DDDE002627B7 /* ViewController.swift */,
 				DA6CF40F2976DDDE002627B7 /* Main.storyboard */,
+				DA6CF43C2976E2AB002627B7 /* movieListViewController.swift */,
 				DA6CF4152976DDDE002627B7 /* Assets.xcassets */,
 				DA6CF4172976DDDE002627B7 /* LaunchScreen.storyboard */,
 				DA6CF41A2976DDDE002627B7 /* Info.plist */,
@@ -264,6 +267,7 @@
 				DA6CF40E2976DDDE002627B7 /* ViewController.swift in Sources */,
 				DA6CF40A2976DDDE002627B7 /* AppDelegate.swift in Sources */,
 				DA6CF40C2976DDDE002627B7 /* SceneDelegate.swift in Sources */,
+				DA6CF43D2976E2AB002627B7 /* movieListViewController.swift in Sources */,
 				DA6CF4142976DDDE002627B7 /* movieListWithFireBase.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
