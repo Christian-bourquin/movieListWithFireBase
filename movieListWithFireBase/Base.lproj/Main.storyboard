@@ -20,12 +20,21 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Um9-BL-Itd">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" textLabel="vL6-Kb-QNg" style="IBUITableViewCellStyleDefault" id="Um9-BL-Itd">
                                         <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Um9-BL-Itd" id="bxT-aq-cOa">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vL6-Kb-QNg">
+                                                    <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -34,10 +43,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="r5O-1m-nG2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9vQ-Xd-lth"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r5O-1m-nG2" secondAttribute="trailing" id="Bvy-c1-6S3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="r5O-1m-nG2" secondAttribute="bottom" id="ez9-VI-cog"/>
-                            <constraint firstItem="r5O-1m-nG2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xar-KP-uUI"/>
+                            <constraint firstItem="r5O-1m-nG2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Kvf-eO-q8S"/>
+                            <constraint firstItem="r5O-1m-nG2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LEt-ls-KXs"/>
+                            <constraint firstItem="r5O-1m-nG2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WOr-9W-FOA"/>
+                            <constraint firstItem="r5O-1m-nG2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dWB-aj-igf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vg4-U3-mBm">
@@ -48,9 +57,15 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="lix-dn-kCG"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="lix-dn-kCG">
+                            <connections>
+                                <action selector="addMovieAction:" destination="BYZ-38-t0r" id="Ueq-Oz-9NT"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="tableViewOutlet" destination="r5O-1m-nG2" id="GvZ-zr-w7V"/>
+                        <outlet property="textFieldOutlet" destination="v1K-3c-urf" id="XMb-u9-dXq"/>
                         <segue destination="qlJ-m7-coj" kind="show" identifier="toMovieInfo" id="jZ5-Tq-WFe"/>
                     </connections>
                 </viewController>

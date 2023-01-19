@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>655419110813-9vj0hiimep5kdufbesnq60i9eqr3b6bf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.655419110813-9vj0hiimep5kdufbesnq60i9eqr3b6bf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCGB8GbXCvIAj3u3J-HTZTxHU-Q4F7gqIg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>655419110813</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>clc.movieListWithFireBase</string>
+	<key>PROJECT_ID</key>
+	<string>movielistrealtime</string>
+	<key>STORAGE_BUCKET</key>
+	<string>movielistrealtime.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:655419110813:ios:149c7752f3fbeb02e9ab74</string>
+	<key>DATABASE_URL</key>
+	<string>https://movielistrealtime-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
