@@ -51,7 +51,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="vg4-U3-mBm">
                         <nil key="title"/>
-                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter movies here" textAlignment="natural" minimumFontSize="17" id="v1K-3c-urf">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="Oiy-Mr-QQC">
+                            <connections>
+                                <action selector="editAction:" destination="BYZ-38-t0r" id="hvF-Yb-XGy"/>
+                            </connections>
+                        </barButtonItem>
+                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter movies here" textAlignment="natural" minimumFontSize="17" id="v1K-3c-urf">
                             <rect key="frame" x="124.66666666666669" y="5" width="144" height="34"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
