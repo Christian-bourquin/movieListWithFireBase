@@ -20,15 +20,22 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" textLabel="vL6-Kb-QNg" style="IBUITableViewCellStyleDefault" id="Um9-BL-Itd">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" textLabel="djD-ID-dIe" detailTextLabel="mQf-6E-fYg" style="IBUITableViewCellStyleValue1" id="Um9-BL-Itd">
                                         <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Um9-BL-Itd" id="bxT-aq-cOa">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vL6-Kb-QNg">
-                                                    <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="djD-ID-dIe">
+                                                    <rect key="frame" x="20" y="15" width="25" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mQf-6E-fYg">
+                                                    <rect key="frame" x="340.33333333333331" y="15" width="32.666666666666664" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
@@ -39,14 +46,32 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ja9-nf-XHh">
+                                <rect key="frame" x="80" y="70" width="233" height="34"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter movie" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O8S-yz-mjq">
+                                        <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter rating" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EkE-Ka-WCD">
+                                        <rect key="frame" x="116.66666666666666" y="0.0" width="116.33333333333334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="r5O-1m-nG2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Kvf-eO-q8S"/>
                             <constraint firstItem="r5O-1m-nG2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LEt-ls-KXs"/>
+                            <constraint firstItem="ja9-nf-XHh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="80" id="VfS-nM-oHn"/>
                             <constraint firstItem="r5O-1m-nG2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WOr-9W-FOA"/>
                             <constraint firstItem="r5O-1m-nG2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dWB-aj-igf"/>
+                            <constraint firstItem="ja9-nf-XHh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="70" id="saI-no-F78"/>
+                            <constraint firstAttribute="trailing" secondItem="ja9-nf-XHh" secondAttribute="trailing" constant="80" id="zJa-Ki-Mog"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vg4-U3-mBm">
@@ -56,12 +81,6 @@
                                 <action selector="editAction:" destination="BYZ-38-t0r" id="hvF-Yb-XGy"/>
                             </connections>
                         </barButtonItem>
-                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter movies here" textAlignment="natural" minimumFontSize="17" id="v1K-3c-urf">
-                            <rect key="frame" x="124.66666666666669" y="5" width="144" height="34"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="lix-dn-kCG">
                             <connections>
                                 <action selector="addMovieAction:" destination="BYZ-38-t0r" id="Ueq-Oz-9NT"/>
@@ -69,8 +88,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="ratingFieldOutlet" destination="EkE-Ka-WCD" id="JcR-wX-YzN"/>
                         <outlet property="tableViewOutlet" destination="r5O-1m-nG2" id="GvZ-zr-w7V"/>
-                        <outlet property="textFieldOutlet" destination="v1K-3c-urf" id="XMb-u9-dXq"/>
+                        <outlet property="textFieldOutlet" destination="O8S-yz-mjq" id="lCP-G7-lJ5"/>
                         <segue destination="qlJ-m7-coj" kind="show" identifier="toMovieInfo" id="jZ5-Tq-WFe"/>
                     </connections>
                 </viewController>
